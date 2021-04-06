@@ -534,6 +534,18 @@ resources:
           - Defines whether the instance has integrity monitoring enabled.
           returned: success
           type: bool
+    confidentialInstanceConfig:
+      description:
+      - Enable confidential instance (requires setting the machine type to any of
+        the n2d-* types).
+      returned: success
+      type: complex
+      contains:
+        enableConfidentialCompute:
+          description:
+          - Enables confidential computing.
+          returned: success
+          type: bool
     status:
       description:
       - 'The status of the instance. One of the following values: PROVISIONING, STAGING,
